@@ -6,7 +6,7 @@ mvn clean spring-boot:run
 
 or
 
-In IDE, run this class: Application
+In IDE, run this main class: Application
 
 Open below url in browser:
 http://localhost:8080/api/trees?x_coordinate=1027431.148&y_coordinate=202756.7687&radius=50.00
