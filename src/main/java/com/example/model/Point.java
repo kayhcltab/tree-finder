@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Point {
 	@QueryParam("x_coordinate") 
-	private double x_coordinate;
+	private Double x_coordinate;
 	@QueryParam("y_coordinate") 
-	private double y_coordinate;
+	private Double y_coordinate;
 }

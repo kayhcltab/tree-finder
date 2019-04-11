@@ -17,6 +17,12 @@ import com.example.rs.TreeFinderService;
 import com.example.util.TreeRetrieverFeignBuilder;
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
+/**
+ * This is the beans configuration class for tree-finder project
+ * 
+ * @author KP
+ *
+ */
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "com.example")

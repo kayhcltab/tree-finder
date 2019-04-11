@@ -18,22 +18,16 @@ import com.jayway.restassured.http.ContentType;
 @SpringApplicationConfiguration(classes = AppConfig.class)
 @WebIntegrationTest(randomPort = true)
 public class TreeFinderServiceIntegrationTest {
-	@Value("${local.server.port}") private int port;
-	
+	@Value("${local.server.port}")
+	private int port;
+
 	@Before
 	public void setUp() {
 		RestAssured.port = port;
 	}
-	
+
 	@Test
 	public void testListOfPersonsIsBeingReturnedSuccessfuly() {
-		given()
-			.when() 
-			.contentType(ContentType.JSON)
-			.get("/api/trees")
-			.then()
-			.statusCode(200)
-			.log()
-			.ifValidationFails();
+		given().when().contentType(ContentType.JSON).get("/api/trees").then().statusCode(200).log().ifValidationFails();
 	}
 }

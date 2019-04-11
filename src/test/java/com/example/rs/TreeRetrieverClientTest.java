@@ -1,6 +1,5 @@
 package com.example.rs;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 import org.junit.Before;
@@ -14,9 +13,6 @@ import com.example.util.TreeRetrieverFeignBuilder;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * Consumes https://github.com/Baeldung/spring-hypermedia-api
- */
 @Slf4j
 @RunWith(JUnit4.class)
 public class TreeRetrieverClientTest {
@@ -29,7 +25,7 @@ public class TreeRetrieverClientTest {
 	}
 
 	@Test
-	public void givenBookClient_shouldRunSuccessfully() throws Exception {
+	public void givenTreeClient_shouldRunSuccessfully() throws Exception {
 		Double radius = 1000000.00d;
 		List<Tree> trees = treeClient.getTreeData();
 		for (Tree tree : trees) {
