@@ -28,6 +28,6 @@ public class TreeFinderServiceIntegrationTest {
 
 	@Test
 	public void testListOfPersonsIsBeingReturnedSuccessfuly() {
-		given().when().contentType(ContentType.JSON).get("/api/trees").then().statusCode(200).log().ifValidationFails();
+		given().when().contentType(ContentType.JSON).get("/api/trees?x_coordinate=1027431.148&y_coordinate=202756.7687&radius=50.00").then().statusCode(200).log().ifValidationFails();
 	}
 }
